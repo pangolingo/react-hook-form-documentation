@@ -458,6 +458,14 @@ const App = () => {
         </p>
 
         <p>
+          Note that the validation rules (`required`, `maxLength`, `minLength`,
+          `max`, `min`, `pattern`) do not add HTML attributes to the input element.
+          If you want to see native browser validation messages, you must set
+          `shouldUseNativeValidation` to `true` in `useForm()`, or manually
+          add these attributes to the element.
+        </p>
+
+        <p>
           By invoking the register function and supplying an input's name, you
           will receive the following methods:
         </p>
